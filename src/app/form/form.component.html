@@ -1,0 +1,53 @@
+<span>Printing Data to console</span>
+
+<form [formGroup]="formGroup" style="display: flex; flex-direction: row; width: 100%;" >
+
+    <div style="display: flex; flex-direction: column; margin: 20px; width: 100%;">
+
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="first_name">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="last_name">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label>Mobile</mat-label>
+            <input #mob matInput formControlName="mobile">
+            <mat-hint align="end">{{mob.value.length}}/10</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label>Address</mat-label>
+            <textarea matInput formControlName="address"></textarea>
+        </mat-form-field>
+
+    </div>
+
+    <div style="display: flex; flex-direction: column; margin: 20px; width: 100%;" >
+
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label>Age</mat-label>
+            <input type="number" matInput formControlName="age">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label>Date of Birth</mat-label>
+            <input type="date" matInput formControlName="dob">
+        </mat-form-field>
+
+    </div>
+
+</form>
+
+<div>
+    <button [disabled]="submitDisabled" style="margin-left: 20px;" (click)="onSubmit()" mat-raised-button color="secondary">Submit</button>
+</div>

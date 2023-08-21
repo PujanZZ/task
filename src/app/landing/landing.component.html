@@ -1,0 +1,18 @@
+<div>
+    <h2>Products List</h2>
+    <button (click)="generateData()" mat-button>Generate Data</button>
+</div>
+
+<div class="products-container">
+    <mat-card class="listCard" *ngFor="let p of productData; index as i">
+      <div class="product-info">
+        <h3>{{ p?.product }}</h3>
+        <p>{{ p?.description }}</p>
+        <span class="price">${{ p?.price }}</span>
+      </div>
+  
+      <div class="add-to-cart">
+        <button color="accent" (click)="addToCart(p)" mat-raised-button>Add to Cart</button>
+      </div>
+    </mat-card>
+  </div>

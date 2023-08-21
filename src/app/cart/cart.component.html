@@ -1,0 +1,17 @@
+<div style="display: flex; flex-direction: row;">
+    <h2>Cart Items</h2>
+    <span class="example-spacer"></span>
+    <div>Total: {{ calculateTotal() | currency:'USD':'symbol':'1.2-2' }}</div>
+</div>
+
+<mat-card class="listCard" *ngFor="let p of shared; index as i" >
+    <div style="background-color: rgba(255, 255, 255, 0.7); padding: 10px; display: flex; flex-direction: row;">
+        <h3>{{p?.product}}</h3>
+        <span style="margin-top: 20px; margin-left: 30px;">{{p?.description}}</span>
+        <span style="margin-top: 20px; margin-left: 50px;">${{p?.price}}</span>
+    </div>
+
+    <div>
+        <button (click)="remoteItem(p,i)" color="primary"  mat-raised-button>Remove Item</button>
+    </div>
+</mat-card>
