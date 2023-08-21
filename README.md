@@ -1,27 +1,24 @@
-# Task
+# Angular-Task
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+First clone. <br />
+```javascript I'm A tab
+git clone https://github.com/PujanZZ/task.git
+```
 
-## Development server
+Next is to install modules to run the program
+```javascript I'm A tab
+npm i 
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+After modules installation, ng serve the angular application
+```javascript I'm A tab
+ng serve
+```
+Home page (Landing Page, and generate data button for product generation, and each product with button to add to cart and Cart data stored to localStorage)
+![Alt Text](https://i.imgur.com/vScliot.png)
 
-## Code scaffolding
+Cart (with added items from landing page, and remove button to remove those items from cart)
+![Cart](https://i.gyazo.com/596e5de81c87d26a8aeffc414dd02086.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Form Page with reactive form and validations
+![Form](https://i.gyazo.com/4872f08944315c669f833acd498b4fef.png)
