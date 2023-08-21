@@ -22,3 +22,20 @@ Cart (with added items from landing page, and remove button to remove those item
 
 Form Page with reactive form and validations
 ![Form](https://i.gyazo.com/4872f08944315c669f833acd498b4fef.png)
+
+
+Workflow
+
+Product Listing:
+
+The frontend fetches product information.
+Each product is displayed with an "Add to Cart" button.
+
+Adding Products to Cart:
+
+When the user clicks the "Add to Cart" button for a specific product, product is added to Cart and user can route to user
+
+Removing Products from Cart:
+
+In the shopping cart view, each product displays a "Remove" button.
+Clicking the "Remove" button remove the selected product from the cart.
